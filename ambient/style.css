@@ -1,0 +1,46 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #000; overflow: hidden; width: 100vw; height: 100vh; }
+canvas { position: fixed; top: 0; left: 0; display: block; }
+
+#overlay {
+  position: fixed; inset: 0; z-index: 10; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+}
+.ring {
+  width: 60px; height: 60px; border-radius: 50%;
+  border: 1px solid rgba(140,180,255,.3);
+  display: flex; align-items: center; justify-content: center;
+  animation: breathe 2.4s ease-in-out infinite;
+}
+.ring::after {
+  content: ''; width: 38px; height: 38px; border-radius: 50%;
+  border: 1px solid rgba(140,180,255,.5);
+  animation: breathe 2.4s ease-in-out infinite reverse;
+}
+#overlay p {
+  color: rgba(140,180,255,.45); font-family: system-ui, sans-serif;
+  font-size: 11px; letter-spacing: .35em; text-transform: uppercase;
+  animation: breathe 2.4s ease-in-out infinite;
+}
+@keyframes breathe {
+  0%, 100% { opacity: .3; transform: scale(1); }
+  50%       { opacity: 1;  transform: scale(1.06); }
+}
+
+#label {
+  position: fixed; bottom: 22px; right: 24px; z-index: 5;
+  color: rgba(140,180,255,.35); font-family: system-ui, sans-serif;
+  font-size: 10px; letter-spacing: .32em; text-transform: uppercase;
+  pointer-events: none; transition: opacity 2.5s;
+}
+#dots {
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 7px; z-index: 5; pointer-events: none;
+}
+.dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: rgba(140,180,255,.18); transition: background .6s, transform .3s;
+}
+.dot.active {
+  background: rgba(140,180,255,.75); transform: scale(1.4);
+}
