@@ -1,5 +1,5 @@
 # このサイトについて
-　このページ（ https://s-taku0502.github.io/ ）は、大晦日ハッカソンとして制作を決行しました。<br>
+　このページ（ https://s-lifecore.github.io/ ）は、大晦日ハッカソンとして制作を決行しました。<br>
 　※なお製作予定がなかったのでハッカソン（connpass）への参加登録はしていません。
 
 # 制作時間
@@ -9,7 +9,7 @@
 # 制作ページ
 　./NewYear'sEve.html ← 自分の中で分かりやすかったのでこちらに変更<br>
 　./1231.html ← ./NewYear'sEve.html にリダイレクトするように編集<br>
-　[https://s-taku0502.github.io/.1231.html](https://s-taku0502.github.io/1231.html) 
+　[https://s-lifecore.github.io/.1231.html](https://s-lifecore.github.io/1231.html) 
 
 ## NewYear'sEve.html について
 　内容は秘密です。実際に大晦日までお待ちください。<br>
@@ -18,7 +18,7 @@
 
 ## ambient/ について
 　BGMに合わせて9種類のビジュアルシーン（フローフィールド・リサジュー・アトラクタ・星座・マンダラ・プラズマ・Boids・折り鶴・トンネル）が自動で切り替わるアンビエント映像体験です。マウス/タッチ操作でインタラクションできます。<br>
-　[https://s-taku0502.github.io/ambient/](https://s-taku0502.github.io/ambient/)<br>
+　[https://s-lifecore.github.io/ambient/](https://s-lifecore.github.io/ambient/)<br>
 
 # その他
 　正式に[ポートフォリオ](https://s-taku0502.vercel.app/)を作成中です。
