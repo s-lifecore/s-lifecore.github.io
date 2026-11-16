@@ -20,5 +20,11 @@
 　BGMに合わせて9種類のビジュアルシーン（フローフィールド・リサジュー・アトラクタ・星座・マンダラ・プラズマ・Boids・折り鶴・トンネル）が自動で切り替わるアンビエント映像体験です。マウス/タッチ操作でインタラクションできます。<br>
 　[https://s-lifecore.github.io/ambient/](https://s-lifecore.github.io/ambient/)<br>
 
+## lt/（CirKit LT会）について
+　金沢工業大学発ベンチャー・課外活動プロジェクト「CirKit」でのLT会（Lightning Talks）を紹介するランディングページです。5分発表のルール、発表テーマのアイデア（ガチャ機能付き）、登壇・参加の流れ、難易度別過去アーカイブ（トグル式）、FAQ、発表練習用タイマーなどを掲載しています。<br>
+　[https://s-lifecore.github.io/lt/](https://s-lifecore.github.io/lt/)<br>
+　・**新春！大LT会🌺 2027（特設ページ）**：[https://s-lifecore.github.io/lt/newyear.html](https://s-lifecore.github.io/lt/newyear.html)<br>
+　・**CirKit 公式サイト**：[https://cirkit.jp/](https://cirkit.jp/)<br>
+
 # その他
 　正式に[ポートフォリオ](https://s-taku0502.vercel.app/)を作成中です。

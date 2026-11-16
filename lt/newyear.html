@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新春！大LT会🌺 2027 | CirKit</title>
+  <meta name="description" content="新春大LT会をオフィスで開催！🎉 技術やITの話を3〜5分で気軽に発表してみませんか？CirKitメンバー（学部1〜4年生）対象、飛び入り参加大歓迎、難易度は自由、お菓子も出るかも🍪 ぜひ遊びに来てください✨">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="newyear.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar for Portal Link -->
+  <div class="top-notice-bar">
+    <div class="top-notice-inner">
+      <span class="notice-badge">特設イベント</span>
+      <span class="notice-text">こちらは2027年1月開催「新春！大LT会🌺」の特設ページです。</span>
+      <span class="notice-guide">LT会の基本ルール・練習タイマー・過去発表は</span>
+      <a href="./index.html" class="notice-link">
+        <span>LT公式ホームページ（/lt）へ</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="./newyear.html" class="nav-logo">
+        <span class="logo-badge">新春 2027</span>
+        <span>新春！大LT会🌺</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">イベント趣旨</a></li>
+        <li><a href="#grades">学年別提案</a></li>
+        <li><a href="#omikuji">LTおみくじ</a></li>
+        <li><a href="#slots">募集枠</a></li>
+        <li><a href="#overview">開催概要</a></li>
+        <li><a href="#topics">テーマ例</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="./index.html" class="nav-portal-badge">🏛️ LT公式HP ↗</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#entry" class="btn-header-cta">
+          <span>登壇エントリー</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="menu-btn" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <!-- Portal Guide Badge -->
+        <div style="margin-bottom: 16px;">
+          <a href="./index.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 7px 18px; background: #ffffff; border: 1px solid var(--border-color); border-radius: 9999px; font-size: 0.83rem; color: var(--text-sub); text-decoration: none; box-shadow: var(--shadow-sm); transition: all 0.2s;">
+            <span>🏛️ 発表の基本ルール・練習タイマー・過去発表一覧は <strong>LT公式ホームページ</strong> をチェック ➔</span>
+          </a>
+        </div>
+
+        <div class="hero-tag">
+          <span>🎍 2027年1月 開催予定 🎍</span>
+        </div>
+
+        <h1 class="hero-title">
+          新春！大LT会<span class="highlight-flower">🌺</span>
+        </h1>
+
+        <div class="hero-announcement-box">
+          <p class="hero-announcement-title">
+            <span>🎉</span>
+            <span>新春大LT会をオフィスで開催します！</span>
+          </p>
+          <p class="hero-announcement-body">
+            技術やITの話を3〜5分で気軽に発表してみませんか？<br>
+            CirKitメンバー（学部1〜4年生）が対象で、飛び入り参加も大歓迎です！<br>
+            難易度は自由、お菓子も出るかも🍪 ぜひ遊びに来てください✨
+          </p>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#entry" class="btn-primary">
+            <span>登壇・参加に申し込む</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#slots" class="btn-secondary">
+            <span>募集枠を見る</span>
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="feature-pill">
+            <div class="feature-pill-icon">⏱</div>
+            <div class="feature-pill-text">
+              <strong>3〜5分（最大2回まで）</strong>
+              <span>1人2テーマの発表も大歓迎！</span>
+            </div>
+          </div>
+          <div class="feature-pill">
+            <div class="feature-pill-icon">👥</div>
+            <div class="feature-pill-text">
+              <strong>最大30人（学部1〜4年生）</strong>
+              <span>学年不問・難易度も完全自由</span>
+            </div>
+          </div>
+          <div class="feature-pill">
+            <div class="feature-pill-icon">🏢</div>
+            <div class="feature-pill-text">
+              <strong>オフィス開催（候補調整中）</strong>
+              <span>平日夕方 or 休日のいずれか</span>
+            </div>
+          </div>
+          <div class="feature-pill">
+            <div class="feature-pill-icon">🍪</div>
+            <div class="feature-pill-text">
+              <strong>お菓子も出るかも！</strong>
+              <span>飛び入り参加＆聴講のみ大歓迎</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portal Connection & Page Difference Guide Section -->
+    <section class="portal-guide-section">
+      <div class="container">
+        <div class="page-guide-card">
+          <div class="guide-intro">
+            <div class="guide-tag">
+              <span class="guide-icon">🗺️</span>
+              <span>ページのご案内 ＆ 役割の違い</span>
+            </div>
+            <h3 class="guide-title">
+              「新春特設ページ」と「LT公式ホームページ」の使い分け
+            </h3>
+            <p class="guide-desc">
+              当ページは<strong>2027年1月開催「新春！大LT会🌺」の特設イベント案内</strong>です。<br>
+              発表の基本ルール、準備の流れ、公式練習タイマー、過去の発表アーカイブなどは、常設の<strong>LT公式ホームページ</strong>に詳しく掲載しています。
+            </p>
+          </div>
+
+          <div class="guide-columns">
+            <!-- 特設ページ側 -->
+            <div class="guide-col col-special">
+              <div class="col-header">
+                <span class="col-pill special-pill">📍 現在のページ（新春特設LP）</span>
+                <h4>新春！大LT会 特設情報</h4>
+              </div>
+              <ul class="col-list">
+                <li><span class="list-bullet">🎍</span> 2027年1月の開催日時候補 ＆ 会場（オフィス＋Discord）</li>
+                <li><span class="list-bullet">🎓</span> 学部1〜4年生向け 学年別おすすめ提案＆応援メッセージ</li>
+                <li><span class="list-bullet">⛩️</span> 新春LTおみくじ（今年の運勢 ＆ 発表ネタ引き当て）</li>
+                <li><span class="list-bullet">⏱️</span> 新春限定の登壇枠（通常・飛び入り・ルーキー・聴講）</li>
+                <li><span class="list-bullet">🍪</span> 新春LTへの参加・登壇エントリーフォーム</li>
+              </ul>
+            </div>
+
+            <!-- 公式ホームページ側 -->
+            <div class="guide-col col-portal">
+              <div class="col-header">
+                <span class="col-pill portal-pill">🏛️ LT公式ホームページ（/lt）</span>
+                <h4>LT会の基本情報 ＆ お役立ちツール</h4>
+              </div>
+              <ul class="col-list">
+                <li><span class="list-bullet">⏱️</span> <strong>発表の基本ルール：</strong> 5分厳守・マサカリ禁止・ドタキャンOK</li>
+                <li><span class="list-bullet">🔔</span> <strong>公式練習タイマー：</strong> 4分・5分のベル音が鳴るタイマー</li>
+                <li><span class="list-bullet">📋</span> <strong>登壇の流れ：</strong> スライド5〜8枚の構成案や準備5ステップ</li>
+                <li><span class="list-bullet">🎲</span> <strong>ネタ思いつきガチャ：</strong> ランダムでタイトルアイデア提案</li>
+                <li><span class="list-bullet">📚</span> <strong>過去の発表アーカイブ：</strong> 先輩や仲間の発表スライド一覧</li>
+              </ul>
+              <div class="col-footer">
+                <a href="./index.html" class="btn-guide-main">
+                  <span>LT公式ホームページを見る</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Grades Tab Group -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+
+        <div class="page-tabs" role="tablist" aria-label="セクション切り替え">
+          <button class="page-tab-btn active" data-tab="ny-tab-about" role="tab" aria-selected="true" aria-controls="ny-tab-about">
+            <span class="page-tab-label">ABOUT EVENT</span>
+            <span class="page-tab-title">イベント趣旨</span>
+          </button>
+          <button class="page-tab-btn" data-tab="ny-tab-grades" role="tab" aria-selected="false" aria-controls="ny-tab-grades">
+            <span class="page-tab-label">FOR STUDENTS</span>
+            <span class="page-tab-title">学年別メッセージ</span>
+          </button>
+        </div>
+
+        <!-- Panel: About -->
+        <div class="page-tab-panel active" id="ny-tab-about" role="tabpanel">
+          <div class="section-header">
+            <span class="section-label">ABOUT EVENT</span>
+            <h2 class="section-title">新春！大LT会🌺 とは？</h2>
+            <p class="section-subtitle">2027年の幕開けを、サークルの仲間と技術で盛り上げる特別な勉強会です。</p>
+          </div>
+          <div class="concept-grid">
+            <div class="card">
+              <div class="card-icon">🎍</div>
+              <h3>新年のアウトプット初め</h3>
+              <p>「今年こそは勉強会で発表してみたい」「学んだことをアウトプットする習慣をつけたい」という方に最高のスタートダッシュの機会を提供します。</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🚀</div>
+              <h3>冬休みの成果＆今年の抱負</h3>
+              <p>冬休みにちょっと書いたコードや、触ってみた新しいツール、または「2027年はこれをマスターする！」という意気込み宣言も立派なLTテーマです。</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🏢</div>
+              <h3>オフィス ＆ オンラインで開催</h3>
+              <p>CirKitのオフィス（リアル会場）とDiscord（オンライン）を接続したハイブリッド開催。お菓子をつまみながらリラックスして参加できます！</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Grades -->
+        <div class="page-tab-panel" id="ny-tab-grades" role="tabpanel">
+          <div class="section-header">
+            <span class="section-label">FOR STUDENTS</span>
+            <h2 class="section-title">学部1〜4年生へ！学年別メッセージ＆おすすめ提案</h2>
+            <p class="section-subtitle">「自分の学年でも発表できるかな？」と不安なあなたへ。気になる学年をタップして開いてみてください！</p>
+          </div>
+
+          <div class="grade-toggle-toolbar">
+            <span class="grade-toggle-hint">💡 各学年をタップで開閉できます</span>
+            <button type="button" class="btn-grade-toggle-all" id="gradeExpandAll">すべて開く</button>
+            <button type="button" class="btn-grade-toggle-all" id="gradeCollapseAll">すべて閉じる</button>
+          </div>
+
+          <div class="grades-accordion" id="gradesAccordion">
+            <div class="grade-toggle-item active" data-grade="b1">
+              <button type="button" class="grade-toggle-header" aria-expanded="true">
+                <div class="grade-toggle-left">
+                  <span class="grade-badge b1">🌱 学部1年生</span>
+                  <span class="grade-header-title">はじめてのLT大歓迎！「触ってみた」だけで立派な発表</span>
+                </div>
+                <div class="grade-toggle-right">
+                  <span class="grade-icon">🔰</span>
+                  <span class="grade-chevron">▼</span>
+                </div>
+              </button>
+              <div class="grade-toggle-body">
+                <div class="grade-body-inner">
+                  <p class="grade-msg">
+                    「知識が浅いから…」と遠慮する必要は一切ありません！1年生の素朴な疑問や初心者の視点は、先輩にとっても一番新鮮で刺さるテーマです。手ぶら・見学・質問だけでも大歓迎！
+                  </p>
+                  <div class="grade-proposals">
+                    <h4>おすすめテーマ例</h4>
+                    <ul>
+                      <li>初めて書いたコード・Webサイトの紹介</li>
+                      <li>「ここが難しくてハマった！」初学者エラー奮闘記</li>
+                      <li>冬休みに独学で触ってみた技術（Python/C言語等）</li>
+                      <li>2027年に挑戦してみたいこと宣言</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grade-toggle-item" data-grade="b2">
+              <button type="button" class="grade-toggle-header" aria-expanded="false">
+                <div class="grade-toggle-left">
+                  <span class="grade-badge b2">🚀 学部2年生</span>
+                  <span class="grade-header-title">脱・初心者！冬休みの成果や個人開発を披露しよう</span>
+                </div>
+                <div class="grade-toggle-right">
+                  <span class="grade-icon">💻</span>
+                  <span class="grade-chevron">▼</span>
+                </div>
+              </button>
+              <div class="grade-toggle-body">
+                <div class="grade-body-inner">
+                  <p class="grade-msg">
+                    専門科目やサークルでの開発に慣れて、作りたいものが増えてくる2年生。冬休みにちょっと作ったミニアプリや、推しツールの紹介でアウトプットの第一歩を踏み出そう！
+                  </p>
+                  <div class="grade-proposals">
+                    <h4>おすすめテーマ例</h4>
+                    <ul>
+                      <li>冬休みにAIや新フレームワーク（React/Flutter等）触ってみた</li>
+                      <li>個人開発アプリのプロトタイプ披露＆意見募集</li>
+                      <li>私のこだわりVS Code拡張機能・ターミナル設定</li>
+                      <li>初めてハッカソンやチーム開発に参加した振り返り</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grade-toggle-item" data-grade="b3">
+              <button type="button" class="grade-toggle-header" aria-expanded="false">
+                <div class="grade-toggle-left">
+                  <span class="grade-badge b3">🔥 学部3年生</span>
+                  <span class="grade-header-title">技術の深掘りや就活・インターンの知見を共有！</span>
+                </div>
+                <div class="grade-toggle-right">
+                  <span class="grade-icon">💼</span>
+                  <span class="grade-chevron">▼</span>
+                </div>
+              </button>
+              <div class="grade-toggle-body">
+                <div class="grade-body-inner">
+                  <p class="grade-msg">
+                    本格的な開発やインターン、研究室選びが始まる3年生。自分の得意分野の知見をまとめたり、後輩へのアドバイスになるような実践的なLTで存在感を発揮しましょう！
+                  </p>
+                  <div class="grade-proposals">
+                    <h4>おすすめテーマ例</h4>
+                    <ul>
+                      <li>サマー・冬期インターン参加記 ＆ 技術面接のリアル</li>
+                      <li>Docker / CI/CD / Supabase などの開発実践Tips</li>
+                      <li>チーム開発でやらかした大失敗とリカバリー方法</li>
+                      <li>読んで本当に人生変わった技術書・学習リソース</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grade-toggle-item" data-grade="b4">
+              <button type="button" class="grade-toggle-header" aria-expanded="false">
+                <div class="grade-toggle-left">
+                  <span class="grade-badge b4">🎓 学部4年生</span>
+                  <span class="grade-header-title">卒研の息抜きや、4年間の集大成・後輩へのエール</span>
+                </div>
+                <div class="grade-toggle-right">
+                  <span class="grade-icon">👑</span>
+                  <span class="grade-chevron">▼</span>
+                </div>
+              </button>
+              <div class="grade-toggle-body">
+                <div class="grade-body-inner">
+                  <p class="grade-msg">
+                    卒業研究や卒業制作が佳境を迎えている4年生！研究のTipsや、大学4年間で培った「これだけは知っておけ！」という知見・買ってよかったガジェットなどを気楽にシェアしてください！
+                  </p>
+                  <div class="grade-proposals">
+                    <h4>おすすめテーマ例</h4>
+                    <ul>
+                      <li>卒業研究で使っている便利なライブラリ・可視化ツール</li>
+                      <li>大学4年間でやってよかったこと・後悔したことTOP 3</li>
+                      <li>4年間で厳選された最強のデスク環境＆ガジェット紹介</li>
+                      <li>後輩へ贈る「挫折しないエンジニアリングの歩き方」</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lt-slide-template-box" id="slide-template" style="margin-top: 36px;">
+            <button type="button" class="slide-template-toggle-btn" id="slideTemplateToggle" aria-expanded="false">
+              <div class="slide-template-toggle-left">
+                <span class="slide-template-tag">🎯 迷ったらコレ！</span>
+                <h3 class="slide-template-toggle-title">LT定番の資料構成（5分・スライド5〜8枚）</h3>
+                <p class="slide-template-toggle-desc">
+                  「スライドってどう作ればいい？」「何を書けばいい？」と不安な方も安心！黄金パターンをタップしてチェック。
+                </p>
+              </div>
+              <div class="slide-template-toggle-right">
+                <span class="slide-toggle-label">スライド構成を見る ▼</span>
+                <span class="slide-toggle-chevron">▼</span>
+              </div>
+            </button>
+            <div class="slide-template-body" id="slideTemplateBody">
+              <div class="slides-flow-grid">
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 1</span>
+                    <span class="slide-time-badge">目安: 15秒</span>
+                  </div>
+                  <h4>① 表紙（タイトル）</h4>
+                  <p>発表タイトルと、お名前（学年・ニックネームでOK）。</p>
+                  <div class="slide-tip">💡 「〜してみた」「〜でハマった話」など具体的に！</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 2</span>
+                    <span class="slide-time-badge">目安: 30秒</span>
+                  </div>
+                  <h4>② 自己紹介</h4>
+                  <p>学年・CirKitでの担当・普段使っている技術や趣味など。</p>
+                  <div class="slide-tip">💡 緊張をほぐす場。1枚でサクッと短めに！</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 3</span>
+                    <span class="slide-time-badge">目安: 45秒</span>
+                  </div>
+                  <h4>③ きっかけ・背景</h4>
+                  <p>「なぜこれを触ったのか？」「何に困っていたのか？」</p>
+                  <div class="slide-tip">💡 共感を呼ぶ導入。「自分もそれ困ってた」を引き出す</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 4〜5</span>
+                    <span class="slide-time-badge">目安: 2分30秒</span>
+                  </div>
+                  <h4>④ やったこと・本題</h4>
+                  <p>作ったアプリ画面・試したコード・エラーの試行錯誤など。</p>
+                  <div class="slide-tip">💡 スクショや実演画面を大きく貼るのが一番伝わる！</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 6</span>
+                    <span class="slide-time-badge">目安: 45秒</span>
+                  </div>
+                  <h4>⑤ 学び・気づき</h4>
+                  <p>「やってみて分かったこと」「良かった点・反省点」。</p>
+                  <div class="slide-tip">💡 失敗談も大歓迎。「こうすれば解決した」は最高の知見</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 7〜8</span>
+                    <span class="slide-time-badge">目安: 15秒</span>
+                  </div>
+                  <h4>⑥ まとめ ＆ 抱負</h4>
+                  <p>結論の一言 ＋ 今年の抱負 ＋「ありがとうございました！」</p>
+                  <div class="slide-tip">💡 5分のベルが鳴っても、この1枚で綺麗に締められます</div>
+                </div>
+              </div>
+              <div class="slide-tips-row">
+                <div class="slide-tip-col">
+                  <span class="tip-icon">📏</span>
+                  <div>
+                    <h5>文字は大きく・少なく</h5>
+                    <p>スライドの文字を読み上げるのではなく、キーワードと図を中心に載せましょう。</p>
+                  </div>
+                </div>
+                <div class="slide-tip-col">
+                  <span class="tip-icon">🖼️</span>
+                  <div>
+                    <h5>画像・スクショを主役に</h5>
+                    <p>完成した画面やターミナルのログ画像を1枚貼るだけで、言葉の10倍伝わります。</p>
+                  </div>
+                </div>
+                <div class="slide-tip-col">
+                  <span class="tip-icon">🛡️</span>
+                  <div>
+                    <h5>未完成・メモ帳共有も大歓迎</h5>
+                    <p>Googleスライド以外にもNotion、Markdown、ターミナル実演など形式は完全自由です。</p>
+                  </div>
+                </div>
+              </div>
+              <div style="text-align: center; margin-top: 24px;">
+                <a href="./index.html#flow" class="btn-portal-link primary-style" style="padding: 10px 24px; font-size: 0.88rem;">
+                  <span>登壇準備の5ステップ ＆ 公式タイマーを見る（LT公式HPへ）</span>
+                  <span>➔</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Omikuji Section -->
+    <section id="omikuji" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">SPECIAL FEATURE</span>
+          <h2 class="section-title">🎍 新春LTおみくじ 2027</h2>
+          <p class="section-subtitle">「何を話そうか迷っている…」というあなたへ。おみくじを引いて新年の運勢と発表テーマのヒントをゲットしよう！</p>
+        </div>
+
+        <div class="omikuji-container">
+          <div class="omikuji-header">
+            <h3>技術おみくじを引く 🧧</h3>
+            <p>ボタンを押すとポップアップで運勢・推し技術・LT発表ネタのヒントが表示されます（全20種）</p>
+          </div>
+
+          <div style="margin: 28px 0;">
+            <div style="font-size: 3.5rem; margin-bottom: 12px; animation: bounce 2s infinite ease-in-out;">🧧</div>
+            <button class="btn-omikuji" id="omikujiBtn" style="font-size: 1.05rem; padding: 14px 36px;">
+              おみくじを引く！ 🎍
+            </button>
+          </div>
+
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            ※ 何度でも引き直せます。気に入ったテーマを見つけてLTに挑戦してみてください！
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Omikuji Modal Popup -->
+    <div class="omikuji-modal-backdrop" id="omikujiModal" aria-hidden="true">
+      <div class="omikuji-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="omikuji-modal-close" id="modalCloseBtn" aria-label="閉じる">✕</button>
+        
+        <div class="omikuji-modal-header">
+          <div class="omikuji-result-badge" id="modalBadge">🎍 大吉</div>
+          <h3 class="omikuji-result-title" id="modalTitle">おみくじタイトル</h3>
+        </div>
+
+        <div class="omikuji-modal-body">
+          <p class="omikuji-result-desc" id="modalDesc"></p>
+
+          <!-- 💡 LT発表テーマのヒント -->
+          <div class="omikuji-hint-box">
+            <div class="hint-header">
+              <span>💡</span>
+              <strong>このおみくじから生まれたLT発表テーマ案</strong>
+            </div>
+            <div class="hint-title" id="modalHintTitle">「◯◯」</div>
+            <div class="hint-advice" id="modalHintAdvice">トークのアドバイス</div>
+          </div>
+
+          <!-- ラッキー情報 -->
+          <div class="omikuji-lucky-box" id="modalLuckyBox"></div>
+        </div>
+
+        <div class="omikuji-modal-footer">
+          <button class="btn-omikuji" id="modalRerollBtn">もう一度引く 🎍</button>
+          <a href="#entry" class="btn-primary" id="modalEntryBtn">このテーマでエントリー！</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Presentation Slots Section -->
+    <section id="slots" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">PRESENTATION SLOTS</span>
+          <h2 class="section-title">選べる登壇枠（3〜5分）</h2>
+          <p class="section-subtitle">学部1〜4年生が対象！難易度は自由、飛び入り大歓迎！<strong>おひとり最大2回まで発表OK</strong>です。</p>
+        </div>
+
+        <div class="slots-grid">
+          <div class="slot-card">
+            <span class="slot-badge">定番枠</span>
+            <h3>通常LT枠（3〜5分）</h3>
+            <p>Webアプリ、インフラ、個人開発、おすすめツールなど、好きなテーマを気軽に発表する枠です。スライドでも実画面共有でもOK！難易度は完全自由です。</p>
+            <div class="slot-time">⏱ 持ち時間：3〜5分 ＋ 質疑・感想</div>
+          </div>
+
+          <div class="slot-card">
+            <span class="slot-badge">大歓迎</span>
+            <h3>飛び入り参加枠（3〜5分）</h3>
+            <p>事前エントリーなしでOK！「当日みんなの発表を聞いていたら話したくなった！」という方のための飛び入り枠です。手ぶらでの参加も大歓迎！</p>
+            <div class="slot-time">⚡ 当日その場で発表OK！</div>
+          </div>
+
+          <div class="slot-card">
+            <span class="slot-badge">おすすめ</span>
+            <h3>初登壇・ルーキー枠（3分〜）</h3>
+            <p>「LTが初めて」「1〜2年生で知識に自信がない」という方向けの枠です。スライド数枚や「これ触ってみた」だけで温かい拍手で迎えられます。</p>
+            <div class="slot-time">🔰 初心者・学部低学年大歓迎</div>
+          </div>
+
+          <div class="slot-card">
+            <span class="slot-badge">気軽に参加</span>
+            <h3>聴講・ガヤ枠（見るだけ）</h3>
+            <p>登壇はせず、オフィスやDiscordから発表を聞いてコメントや拍手を送る枠です。お菓子を食べながら気軽に遊びに来てください！🍪</p>
+            <div class="slot-time">🍪 お菓子をつまみながら見学OK</div>
+          </div>
+        </div>
+
+        <!-- Portal Guide: Rules & Flow Callout -->
+        <div class="portal-callout-card">
+          <div class="portal-callout-info">
+            <span class="portal-callout-icon">⏱</span>
+            <div class="portal-callout-text">
+              <h4>発表ルール ＆ 登壇準備のコツは公式ホームページをチェック！</h4>
+              <p>
+                「5分でどうまとめる？」「スライドは何枚くらい必要？」「練習タイマーを使いたい」という方は、LT公式ホームページのガイドをご覧ください。4分・5分でチーンとベルが鳴るリアルタイマーも完備しています！
+              </p>
+            </div>
+          </div>
+          <div class="portal-callout-actions">
+            <a href="./index.html#rules" class="btn-portal-link primary-style">
+              <span>発表ルール ＆ 練習タイマー</span>
+              <span>➔</span>
+            </a>
+            <a href="./index.html#flow" class="btn-portal-link">
+              <span>登壇準備の流れ（5ステップ）</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview & Schedule Section -->
+    <section id="overview" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">OVERVIEW</span>
+          <h2 class="section-title">開催概要 ＆ タイムスケジュール</h2>
+          <p class="section-subtitle">2027年1月の開催予定情報です（詳細は決まり次第Discordでもアナウンスします）。</p>
+        </div>
+
+        <div class="overview-card">
+          <div class="info-grid">
+            <div class="info-item">
+              <dt>開催時期</dt>
+              <dd>2027年1月中旬〜下旬（予定）</dd>
+            </div>
+            <div class="info-item">
+              <dt>開催場所</dt>
+              <dd>CirKit オフィス ＆ Discord（ハイブリッド）</dd>
+            </div>
+            <div class="info-item">
+              <dt>参加定員</dt>
+              <dd>最大 30 人（オフィス＋オンライン）</dd>
+            </div>
+            <div class="info-item">
+              <dt>登壇回数</dt>
+              <dd>おひとり最大 2 回まで登壇可能！</dd>
+            </div>
+            <div class="info-item">
+              <dt>参加対象</dt>
+              <dd>CirKit メンバーのみ（学部1〜4年、飛び入り歓迎）</dd>
+            </div>
+            <div class="info-item">
+              <dt>参加費・特典</dt>
+              <dd>完全無料（お菓子も出るかも🍪）</dd>
+            </div>
+          </div>
+
+          <!-- Time Candidates -->
+          <div style="margin-bottom: 28px;">
+            <h4 style="font-size: 1.05rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+              <span>🕒</span>
+              <span>開催時間（以下のいずれかで開催予定・調整中）</span>
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-sub); margin-bottom: 12px;">
+              参加者の都合に合わせて、以下のいずれかの時間帯で開催予定です。Discordやアンケートにて希望を受付中！
+            </p>
+
+            <div class="time-candidates-grid">
+              <div class="time-candidate-card">
+                <span class="candidate-badge">平日 候補</span>
+                <span class="time-val">17:30 〜</span>
+                <span class="time-sub">放課後・夕方開催</span>
+              </div>
+              <div class="time-candidate-card">
+                <span class="candidate-badge">休日 候補①</span>
+                <span class="time-val">09:30 〜</span>
+                <span class="time-sub">休日の朝活スタート</span>
+              </div>
+              <div class="time-candidate-card">
+                <span class="candidate-badge">休日 候補②</span>
+                <span class="time-val">13:30 〜</span>
+                <span class="time-sub">休日の午後ゆったり開催</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="margin-bottom: 20px; font-size: 1.15rem;">🕒 当日のタイムスケジュール例（平日17:30開始の場合・全約70分）</h3>
+          <div class="timeline-list">
+            <div class="timeline-row">
+              <div class="time-slot">17:30 - 17:35</div>
+              <div class="slot-detail">
+                <strong>新年オープニング＆乾杯（お茶など）</strong>
+                <span>新年の挨拶と発表順のアナウンス</span>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="time-slot">17:35 - 18:05</div>
+              <div class="slot-detail">
+                <strong>前半LTセッション（4〜5名）</strong>
+                <span>各3〜5分LT ＋ 質疑・感想</span>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="time-slot">18:05 - 18:15</div>
+              <div class="slot-detail">
+                <strong>中間休憩 ＆ 新春おみくじ結果共有タイム</strong>
+                <span>お菓子タイムとリフレッシュ雑談</span>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="time-slot">18:15 - 18:40</div>
+              <div class="slot-detail">
+                <strong>後半LTセッション（3〜4名）</strong>
+                <span>飛び入り枠や抱負枠などの発表</span>
+              </div>
+            </div>
+
+            <div class="timeline-row">
+              <div class="time-slot">18:40 - 自由</div>
+              <div class="slot-detail">
+                <strong>クロージング・集合写真・新春交流会</strong>
+                <span>発表の感想戦や技術談義で盛り上がりましょう！</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">INSPIRATION</span>
+          <h2 class="section-title">新春LTにおすすめのテーマ例</h2>
+          <p class="section-subtitle">こんな発表ネタが集まると大いに盛り上がります！</p>
+        </div>
+
+        <div class="concept-grid">
+          <div class="card">
+            <h3>🌅 新年の抱負・挑戦系</h3>
+            <p>・2027年に習得したい言語（Rust/Go/TypeScriptなど）<br>
+            ・今年リリースを目指す個人開発Webサービスの構想<br>
+            ・競技プログラミングでレート◯◯を目指すロードマップ</p>
+          </div>
+
+          <div class="card">
+            <h3>❄️ 冬休みの成果・やってみた系</h3>
+            <p>・冬休みの3日間でAIを活用して作ったミニアプリ<br>
+            ・新しいキーボードのファームウェアをいじってみた話<br>
+            ・自宅サーバーをゼロから再構築した奮闘記</p>
+          </div>
+
+          <div class="card">
+            <h3>📦 振り返り・買ってよかった系</h3>
+            <p>・2026年買って本当にQOLが上がったガジェットBest 3<br>
+            ・昨年読んだ技術書の中で最も影響を受けた1冊<br>
+            ・ハッカソンで大失敗して学んだチーム開発の鉄則</p>
+          </div>
+        </div>
+
+        <!-- Portal Guide: Past Talks & Idea Generator -->
+        <div class="portal-callout-card">
+          <div class="portal-callout-info">
+            <span class="portal-callout-icon">📚</span>
+            <div class="portal-callout-text">
+              <h4>普段の技術ネタ・過去発表アーカイブ・ネタガチャは公式ホームページへ！</h4>
+              <p>
+                「新春以外の普段の技術ネタ・ツール効率化・失敗談の例も見たい」「先輩たちがどんなテーマで話したか一覧で探したい」という方は、LT公式ホームページのアーカイブやネタ思いつきガチャをお試しください！
+              </p>
+            </div>
+          </div>
+          <div class="portal-callout-actions">
+            <a href="./index.html#topics" class="btn-portal-link">
+              <span>テーマのヒント一覧</span>
+              <span>➔</span>
+            </a>
+            <a href="./index.html#archive" class="btn-portal-link">
+              <span>過去の発表アーカイブ</span>
+              <span>➔</span>
+            </a>
+            <a href="./index.html#topics" class="btn-portal-link primary-style">
+              <span>ネタガチャを回す 🎲</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">よくある質問</h2>
+          <p class="section-subtitle">新春大LT会に関するよくあるご質問です。</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 1人で2回登壇してもいいですか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい！ひとりあたりの発表回数は<strong>最大2回までOK</strong>です。「冬休みに作ったアプリ」と「買ってよかったデスクグッズ」など、2つのテーマを発表したい熱い気持ちを大歓迎します！</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 定員は何人ですか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>最大30人</strong>（オフィス会場＋Discordオンライン）を予定しています。オフィスの席数に限りがあるため、登壇・聴講ともに早めの参加表明がおすすめです！</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 開催日時はいつ決まりますか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>現在は「平日17:30〜」「休日9:30〜」「休日13:30〜」のいずれかで調整中です。サークル内Discordやアンケートで参加希望者の都合を集約し、確定次第速やかにアナウンスします！</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 学部1年生やプログラミング初心者でも参加できますか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>大歓迎です！CirKitメンバー（学部1〜4年生）が対象で、発表の難易度は完全に自由です。「初歩的な内容だから…」と心配する必要はまったくありません。日頃の気づきや興味のある技術を気軽にお話しください！</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 事前エントリーしていなくても、当日飛び入りで発表できますか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>飛び入り参加も大歓迎です！当日オフィスに来てみて「自分もちょっと喋ってみようかな」と思ったら、その場で手を挙げて発表いただけます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. お菓子は本当に出ますか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい！オフィス会場ではお菓子や飲み物をご用意する予定です🍪 お菓子をつまみながら、リラックスした雰囲気でLTを楽しみましょう！</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. スライドはお正月っぽいデザインにしないとダメですか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>まったくそんなことはありません！普段のスライドや、Notion、メモ帳、ターミナル画面の共有など、自分が発表しやすいスタイルで構いません。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 途中で抜けたり、遅れて参加することは可能ですか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>可能です。学業やアルバイト、予定に合わせて途中参加・途中退出OKですので、お気軽にどうぞ。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portal Guide: General FAQ Callout -->
+        <div class="portal-callout-card" style="margin-top: 36px;">
+          <div class="portal-callout-info">
+            <span class="portal-callout-icon">💡</span>
+            <div class="portal-callout-text">
+              <h4>スライド枚数や機材接続など、LT全般の基本FAQは公式ホームページへ！</h4>
+              <p>
+                「スライドは何枚くらい作ればいい？」「当日の画面共有やプロジェクター接続はどうする？」「批判やマサカリが飛んできたらどうする？」など、LT会全般のルール・文化・ノウハウに関するFAQは、LT公式ホームページに網羅されています。
+              </p>
+            </div>
+          </div>
+          <div class="portal-callout-actions">
+            <a href="./index.html#faq" class="btn-portal-link primary-style">
+              <span>LT公式FAQを見る</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entry / CTA Section -->
+    <section id="entry" class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>オフィスで気軽に技術トーク！<br>お菓子も出るかも🍪</h2>
+          <p>
+            登壇枠・聴講枠ともにエントリー受付中！飛び入り参加も大歓迎です！<br>
+            学部1〜4年生みんなで、リラックスして楽しい時間を過ごしましょう✨
+          </p>
+
+          <div class="cta-buttons">
+            <a href="https://forms.gle/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <span>新春LT 登壇エントリー（Googleフォーム）</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>Discordで参加・相談する</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h4>新春！大LT会🌺 2027</h4>
+          <p>金沢工業大学発ベンチャー・プロジェクト「CirKit」メンバーによる新春技術イベント特設LP</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://cirkit.jp/" target="_blank" rel="noopener noreferrer" class="footer-link-highlight">🌐 CirKit 公式サイト ↗</a>
+          <a href="./index.html" class="footer-link-portal">🏛️ LT公式ホームページ</a>
+          <a href="./index.html#rules">発表ルール・タイマー</a>
+          <a href="./index.html#flow">登壇の流れ</a>
+          <a href="./index.html#archive">過去アーカイブ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Takumi Sudo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="newyear.js"></script>
+</body>
+</html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CirKit LT会 | 5分で広がる、技術と好奇心。</title>
+  <meta name="description" content="金沢工業大学発ベンチャー・課外活動プロジェクト「CirKit」のLT会（Lightning Talks）紹介ページです。ルールや発表テーマのヒント、登壇・参加の流れ、よくある質問を掲載しています。初心者・聴講のみも大歓迎！">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="./index.html" class="nav-logo">
+        <span class="logo-badge">CirKit</span>
+        <span>LT会 公式HP</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">LTとは</a></li>
+        <li><a href="#rules">ルール</a></li>
+        <li><a href="#flow">登壇の流れ</a></li>
+        <li><a href="#topics">ネタのヒント</a></li>
+        <li><a href="#overview">開催概要</a></li>
+        <li><a href="#archive">過去の発表</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#entry" class="btn-header-cta">
+          <span>エントリーする</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="menu-btn" id="menuToggle" aria-label="メニューを開閉する" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <!-- New Year Special Event Banner -->
+        <div style="margin-bottom: 20px;">
+          <a href="./newyear.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; background: #fef2f2; border: 1px solid #fecaca; border-radius: 9999px; color: #dc2626; font-size: 0.86rem; font-weight: 700; text-decoration: none; box-shadow: 0 1px 3px rgba(220, 38, 38, 0.1); transition: all 0.2s;">
+            <span>🎍 【特設イベント】2027年1月開催「新春！大LT会🌺」特設ページはこちら ➔</span>
+          </a>
+        </div>
+
+        <div class="hero-tag">
+          <span class="pulse-dot"></span>
+          <span>CirKit LT会 公式ホームページ（総合ポータル）</span>
+        </div>
+
+        <h1 class="hero-title">
+          5分でひろがる、<br>
+          <span class="gradient-text">技術と好奇心の輪。</span>
+        </h1>
+
+        <p class="hero-description">
+          CirKit LT会は、メンバーが日頃学んだこと・試した技術・好きなモノをカジュアルに共有し合うショートプレゼン会です。<br>
+          完成されたプロダクトじゃなくてOK！初心者・初登壇・見学のみの参加も大歓迎です。
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#entry" class="btn-primary">
+            <span>登壇・参加に申し込む</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#rules" class="btn-secondary">
+            <span>発表ルールを見る</span>
+          </a>
+        </div>
+
+        <!-- Hero Feature Badges -->
+        <div class="hero-features">
+          <div class="feature-pill">
+            <div class="feature-pill-icon">⏱</div>
+            <div class="feature-pill-text">
+              <strong>持ち時間5分</strong>
+              <span>サクッと話せてサクッと聞ける</span>
+            </div>
+          </div>
+          <div class="feature-pill">
+            <div class="feature-pill-icon">🔰</div>
+            <div class="feature-pill-text">
+              <strong>初登壇・初心者歓迎</strong>
+              <span>「触ってみた」だけで立派な発表</span>
+            </div>
+          </div>
+          <div class="feature-pill">
+            <div class="feature-pill-icon">🤝</div>
+            <div class="feature-pill-text">
+              <strong>安心のアットホーム感</strong>
+              <span>失敗談・バグの共有も大歓迎</span>
+            </div>
+          </div>
+          <div class="feature-pill">
+            <div class="feature-pill-icon">👀</div>
+            <div class="feature-pill-text">
+              <strong>聴講のみOK</strong>
+              <span>まずは聞くだけ・リアクションのみでも◎</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Rules / Flow Tab Group -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+
+        <div class="page-tabs" role="tablist" aria-label="セクション切り替え">
+          <button class="page-tab-btn active" data-tab="tab-about" role="tab" aria-selected="true" aria-controls="tab-about">
+            <span class="page-tab-label">ABOUT LT</span>
+            <span class="page-tab-title">LTとは？</span>
+          </button>
+          <button class="page-tab-btn" data-tab="tab-rules" role="tab" aria-selected="false" aria-controls="tab-rules">
+            <span class="page-tab-label">RULES</span>
+            <span class="page-tab-title">発表ルール</span>
+          </button>
+          <button class="page-tab-btn" data-tab="tab-flow" role="tab" aria-selected="false" aria-controls="tab-flow">
+            <span class="page-tab-label">FLOW</span>
+            <span class="page-tab-title">登壇の流れ</span>
+          </button>
+        </div>
+
+        <!-- Panel: About -->
+        <div class="page-tab-panel active" id="tab-about" role="tabpanel">
+          <div class="section-header">
+            <span class="section-label">ABOUT LT</span>
+            <h2 class="section-title">そもそも「LT（ライトニングトーク）」とは？</h2>
+            <p class="section-subtitle">稲妻（Lightning）のように短い時間（5分前後）で次々と発表する、エンジニア文化発祥の気軽なショートプレゼンテーションです。</p>
+          </div>
+          <div class="about-grid">
+            <div class="card">
+              <div class="card-icon">⚡</div>
+              <h3>敷居は低く、学びは深く</h3>
+              <p>スライドの作り込みや高度な専門知識は必須ではありません。「このコマンドが便利だった」「エラーでハマった原因」など、身近な気づきが誰かの大きなヒントになります。</p>
+            </div>
+            <div class="card">
+              <div class="card-icon orange">🌱</div>
+              <h3>アウトプットで急成長</h3>
+              <p>他人に説明することで、自分の知識が整理され定着します。大学生活や就活での面接・プレゼンの練習の場としても最高のトレーニンググラウンドです。</p>
+            </div>
+            <div class="card">
+              <div class="card-icon cyan">💬</div>
+              <h3>仲間とつながる技術トーク</h3>
+              <p>CirKitメンバーがどんな技術に関心を持っているかを知るきっかけに。発表後の「それどうやるの？」「一緒に作ってみよう」から新しいプロジェクトが生まれます。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Rules -->
+        <div class="page-tab-panel" id="tab-rules" role="tabpanel">
+          <div class="section-header">
+            <span class="section-label">RULES</span>
+            <h2 class="section-title">発表ルール＆レギュレーション</h2>
+            <p class="section-subtitle">誰でも安心して発表できるよう、シンプルで優しいルールを設けています。</p>
+          </div>
+          <div class="rules-container">
+            <div class="rule-highlight-box">
+              <h3>⏱ 発表時間ルール</h3>
+              <div class="rule-time-display">
+                <span class="time-num">5</span>
+                <span class="time-unit">分ジャスト</span>
+              </div>
+              <p style="color: var(--text-sub); font-size: 0.95rem;">
+                時間を守ることもLTの醍醐味です。未完成でも5分で一旦拍手で終了します！気負わずに話しましょう。
+              </p>
+              <ul class="bell-schedule">
+                <li><strong>4分経過：</strong> チーン（1鈴：残り1分のお知らせ）</li>
+                <li class="end"><strong>5分経過：</strong> チリリン（3鈴：発表終了・盛大な拍手！）</li>
+                <li><strong>質疑応答・感想：</strong> 2〜3分（Slack/会場で自由に交流）</li>
+              </ul>
+              <div class="timer-widget">
+                <p style="font-size: 0.85rem; color: var(--text-sub);">発表練習用 5分タイマー（ベル音つき）</p>
+                <div class="timer-screen" id="timerDisplay">05:00</div>
+                <div class="timer-controls">
+                  <button class="timer-btn primary" id="timerStart">スタート</button>
+                  <button class="timer-btn" id="timerReset">リセット</button>
+                </div>
+              </div>
+            </div>
+            <div class="rules-list">
+              <div class="rule-card">
+                <div class="rule-card-badge">💻</div>
+                <div class="rule-card-content">
+                  <h4>スライド形式はなんでもOK</h4>
+                  <p>Googleスライド、Keynote、Notion、Markdown、ブラウザ画面、GitHubのリポジトリ、ターミナル実演など、自分が一番伝えやすい形式でOKです。</p>
+                </div>
+              </div>
+              <div class="rule-card">
+                <div class="rule-card-badge">🎯</div>
+                <div class="rule-card-content">
+                  <h4>テーマは自由（非IT系も歓迎）</h4>
+                  <p>Web、モバイル、AI、インフラなどの技術ネタはもちろん、「自作キーボード」「買ってよかったガジェット」「おすすめの技術書」「ハッカソン参加記」も大歓迎！</p>
+                </div>
+              </div>
+              <div class="rule-card">
+                <div class="rule-card-badge">👏</div>
+                <div class="rule-card-content">
+                  <h4>ポジティブフィードバック文化</h4>
+                  <p>発表者へは「ナイス発表！」「そのツール知らなかった！」など温かいコメント・リアクションを送ります。批判やマサカリは一切禁止です。</p>
+                </div>
+              </div>
+              <div class="rule-card">
+                <div class="rule-card-badge">🛡</div>
+                <div class="rule-card-content">
+                  <h4>ドタキャン・未完成でも大丈夫</h4>
+                  <p>学業や急用が最優先です。もし当日間に合わなくても、事前に一言連絡すれば怒られることは絶対にありません。途中までの発表でも大歓迎です。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel: Flow -->
+        <div class="page-tab-panel" id="tab-flow" role="tabpanel">
+          <div class="section-header">
+            <span class="section-label">FLOW</span>
+            <h2 class="section-title">登壇・参加までの流れ</h2>
+            <p class="section-subtitle">エントリーから当日までのステップです。わずか3ステップで登壇できます。</p>
+          </div>
+          <div class="flow-steps">
+            <div class="step-card">
+              <div class="step-number">01</div>
+              <h4>ネタをざっくり決める</h4>
+              <p>「最近触ったこれ」「このエラー困った」など、話したいことを1行で思い浮かべます。詳細は後からでOK！</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">02</div>
+              <h4>エントリーする</h4>
+              <p>エントリーフォームまたはCirKitのSlackのLTチャンネルで「登壇希望」と発表タイトル（仮で可）を投稿！</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">03</div>
+              <h4>資料を作る（5〜8枚）</h4>
+              <p>5分はスライド5〜8枚程度が目安。「自己紹介 → きっかけ → やったこと → 学び」の構成がオススメです。</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">04</div>
+              <h4>当日！5分楽しんで話す</h4>
+              <p>オンライン（画面共有）または部室のプロジェクターで発表！みんなで拍手やコメントで盛り上げます。</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">05</div>
+              <h4>アフタートーク＆交流</h4>
+              <p>発表後は「それ使ってみたい！」「あの部分詳しく教えて！」と質問や雑談タイム。次の学びに繋がります。</p>
+            </div>
+          </div>
+
+          <div class="lt-slide-template-box" id="slide-template">
+            <button type="button" class="slide-template-toggle-btn" id="slideTemplateToggle" aria-expanded="false">
+              <div class="slide-template-toggle-left">
+                <span class="slide-template-tag">🎯 迷ったらコレ！</span>
+                <h3 class="slide-template-toggle-title">LT定番の資料構成（5分・スライド5〜8枚テンプレート）</h3>
+                <p class="slide-template-toggle-desc">
+                  「スライドってどう作ればいい？」「何枚くらい作ればいい？」と迷ったら、この黄金パターンに沿って作るのがオススメ！
+                </p>
+              </div>
+              <div class="slide-template-toggle-right">
+                <span class="slide-toggle-label">スライド構成を見る ▼</span>
+                <span class="slide-toggle-chevron">▼</span>
+              </div>
+            </button>
+            <div class="slide-template-body" id="slideTemplateBody">
+              <div class="slides-flow-grid">
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 1</span>
+                    <span class="slide-time-badge">目安: 15秒</span>
+                  </div>
+                  <h4>① 表紙（タイトル）</h4>
+                  <p>発表タイトルと、登壇者名（学年・ニックネームでOK）。</p>
+                  <div class="slide-tip">💡 「〜してみた」「〜でハマった話」など具体的に！</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 2</span>
+                    <span class="slide-time-badge">目安: 30秒</span>
+                  </div>
+                  <h4>② 自己紹介</h4>
+                  <p>学年・サークルでの担当・普段使っている技術や趣味など。</p>
+                  <div class="slide-tip">💡 緊張をほぐす場。1枚でサクッと短めに！</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 3</span>
+                    <span class="slide-time-badge">目安: 45秒</span>
+                  </div>
+                  <h4>③ きっかけ・背景</h4>
+                  <p>「なぜこれを触ったのか？」「何に困っていたのか？」</p>
+                  <div class="slide-tip">💡 共感を呼ぶ導入。「自分もそれ困ってた」を引き出す</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 4〜5</span>
+                    <span class="slide-time-badge">目安: 2分30秒</span>
+                  </div>
+                  <h4>④ やったこと・本題</h4>
+                  <p>作ったアプリ画面・試したコード・エラーの試行錯誤など。</p>
+                  <div class="slide-tip">💡 スクショや実演画面を大きく貼るのが一番伝わる！</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 6</span>
+                    <span class="slide-time-badge">目安: 45秒</span>
+                  </div>
+                  <h4>⑤ 学び・気づき</h4>
+                  <p>「やってみて分かったこと」「良かった点・反省点」。</p>
+                  <div class="slide-tip">💡 失敗談も大歓迎。「こうすれば解決した」は最高の知見</div>
+                </div>
+                <div class="slide-item-card">
+                  <div class="slide-card-top">
+                    <span class="slide-num-badge">スライド 7〜8</span>
+                    <span class="slide-time-badge">目安: 15秒</span>
+                  </div>
+                  <h4>⑥ まとめ ＆ 今後</h4>
+                  <p>結論の一言 ＋ 次の目標 ＋「ありがとうございました！」</p>
+                  <div class="slide-tip">💡 5分のベルが鳴っても、この1枚で綺麗に締められます</div>
+                </div>
+              </div>
+              <div class="slide-tips-row">
+                <div class="slide-tip-col">
+                  <span class="tip-icon">📏</span>
+                  <div>
+                    <h5>文字は大きく・少なく</h5>
+                    <p>スライドの文字を読み上げるのではなく、キーワードと図を中心に載せましょう。</p>
+                  </div>
+                </div>
+                <div class="slide-tip-col">
+                  <span class="tip-icon">🖼️</span>
+                  <div>
+                    <h5>画像・スクショを主役に</h5>
+                    <p>完成した画面やターミナルのログ画像を1枚貼るだけで、言葉の10倍伝わります。</p>
+                  </div>
+                </div>
+                <div class="slide-tip-col">
+                  <span class="tip-icon">🛡️</span>
+                  <div>
+                    <h5>未完成・メモ帳共有も大歓迎</h5>
+                    <p>Googleスライド以外にもNotion、Markdown、ターミナル実演など形式は完全自由です。</p>
+                  </div>
+                </div>
+              </div>
+              <div style="text-align: center; margin-top: 24px;">
+                <button type="button" class="btn-secondary" id="switchToRulesTab" style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; padding: 10px 22px; cursor: pointer; border: 1px solid var(--border-hover); border-radius: var(--radius-full); background: #ffffff; color: var(--text-main);">
+                  <span>⏱️ ベル音つき5分練習タイマーでリハーサルする</span>
+                  <span>➔</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">INSPIRATION</span>
+          <h2 class="section-title">発表テーマのヒント ＆ アイデア</h2>
+          <p class="section-subtitle">「何を話せばいいかわからない…」というあなたへ。こんなテーマが大歓迎です！</p>
+        </div>
+
+        <div class="topics-wrapper">
+          <!-- Categories Grid -->
+          <div class="topics-grid">
+            <div class="topic-box">
+              <div class="topic-box-title">
+                <span>🚀</span>
+                <span>技術・やってみた系</span>
+              </div>
+              <div class="topic-pills">
+                <div class="topic-item">新しく触ったフレームワークの感想</div>
+                <div class="topic-item">個人開発で作ったミニアプリの紹介</div>
+                <div class="topic-item">AIツール（Cursor / v0等）使ってみた</div>
+                <div class="topic-item">個人ブログを爆速化してみた工夫</div>
+              </div>
+            </div>
+
+            <div class="topic-box">
+              <div class="topic-box-title">
+                <span>🛠</span>
+                <span>ツール・開発効率化</span>
+              </div>
+              <div class="topic-pills">
+                <div class="topic-item">愛用しているVS Code拡張機能3選</div>
+                <div class="topic-item">ターミナル・Zsh・tmuxの快適設定</div>
+                <div class="topic-item">Notionでタスク管理を自動化した話</div>
+                <div class="topic-item">知っておくと得するGit便利技</div>
+              </div>
+            </div>
+
+            <div class="topic-box">
+              <div class="topic-box-title">
+                <span>💣</span>
+                <span>失敗談・トラブルシュート</span>
+              </div>
+              <div class="topic-pills">
+                <div class="topic-item">数時間溶かしたあのエラーの原因</div>
+                <div class="topic-item">git push -f で血の気が引いた思い出</div>
+                <div class="topic-item">チーム開発でのコミュニケーション失敗談</div>
+                <div class="topic-item">ハッカソンで設計が破綻した反省会</div>
+              </div>
+            </div>
+
+            <div class="topic-box">
+              <div class="topic-box-title">
+                <span>☕</span>
+                <span>ガジェット・趣味・その他</span>
+              </div>
+              <div class="topic-pills">
+                <div class="topic-item">自作キーボード沼にハマった話</div>
+                <div class="topic-item">今年買って人生変わったガジェット</div>
+                <div class="topic-item">初学者に推したい技術書ベスト3</div>
+                <div class="topic-item">インターン・技術面接のリアル体験記</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gacha Widget -->
+          <div class="gacha-box">
+            <div class="gacha-icon">🎲</div>
+            <h3>ネタ思いつきガチャ</h3>
+            <p style="font-size: 0.88rem; color: var(--text-sub); margin-top: 6px;">ボタンを押すと、LTのタイトルアイデアがランダムで提案されます！</p>
+            
+            <div class="gacha-result" id="gachaResult">
+              ボタンを押してネタを引こう！
+            </div>
+
+            <button class="btn-gacha" id="gachaBtn">
+              ガチャを回す！ 🎲
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview & Timetable Section -->
+    <section id="overview" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">OVERVIEW</span>
+          <h2 class="section-title">開催概要 ＆ タイムテーブル</h2>
+          <p class="section-subtitle">CirKit LT会の定期開催スケジュールとタイムラインです。</p>
+        </div>
+
+        <div class="overview-card">
+          <div class="info-rows">
+            <div class="info-row">
+              <dt>開催頻度</dt>
+              <dd>月1回〜隔週（水曜日/金曜日夕方など）</dd>
+            </div>
+            <div class="info-row">
+              <dt>開催場所</dt>
+              <dd>CirKit オフィス & Discord（ハイブリッド）</dd>
+            </div>
+            <div class="info-row">
+              <dt>対象</dt>
+              <dd>CirKit メンバーのみ（聴講・見学のみも歓迎）</dd>
+            </div>
+            <div class="info-row">
+              <dt>参加費</dt>
+              <dd>完全無料</dd>
+            </div>
+          </div>
+
+          <h3 style="margin-bottom: 20px; font-size: 1.15rem;">🕒 当日のタイムテーブル例（全60分）</h3>
+          <div class="timetable-list">
+            <div class="timetable-row">
+              <div class="time-slot">18:30 - 18:35</div>
+              <div class="slot-desc">
+                <strong>オープニング＆連絡事項</strong>
+                <span>今日の流れの説明、画面共有チェックなど</span>
+              </div>
+            </div>
+
+            <div class="timetable-row">
+              <div class="time-slot">18:35 - 19:15</div>
+              <div class="slot-desc">
+                <strong>LT発表セッション（5名〜6名程度）</strong>
+                <span>各5分LT ＋ 質疑・感想2分ずつ</span>
+              </div>
+            </div>
+
+            <div class="timetable-row">
+              <div class="time-slot">19:15 - 19:25</div>
+              <div class="slot-desc">
+                <strong>クロージング・次回告知</strong>
+                <span>全体写真（任意）・アンケート・次回の日程案内</span>
+              </div>
+            </div>
+
+            <div class="timetable-row">
+              <div class="time-slot">19:25 - 自由</div>
+              <div class="slot-desc">
+                <strong>アフタートーク＆懇親会</strong>
+                <span>発表内容についての深掘りや雑談交流</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section id="archive" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">PAST TALKS</span>
+          <h2 class="section-title">過去の発表テーマ一覧</h2>
+          <p class="section-subtitle">難易度別にこれまでの発表テーマ例をまとめました。タップして開閉できます。</p>
+        </div>
+
+        <!-- Archive Toggle Toolbar -->
+        <div class="archive-toggle-toolbar">
+          <span class="archive-toggle-hint">💡 難易度をタップして開閉できます</span>
+          <button type="button" class="btn-archive-toggle-all" id="archiveExpandAll">すべて開く</button>
+          <button type="button" class="btn-archive-toggle-all" id="archiveCollapseAll">すべて閉じる</button>
+        </div>
+
+        <!-- Archive Level Accordion -->
+        <div class="archive-accordion" id="archiveAccordion">
+          <!-- 初心者向け -->
+          <div class="archive-toggle-item" data-level="beginner">
+            <button type="button" class="archive-toggle-header" aria-expanded="false">
+              <div class="archive-toggle-left">
+                <span class="level-badge beginner">🔰 初心者向け</span>
+                <span class="archive-toggle-title">入門・やってみた・エラー克服・日常ツール</span>
+                <span class="archive-count-badge">6件</span>
+              </div>
+              <span class="archive-chevron">▼</span>
+            </button>
+            <div class="archive-toggle-body">
+              <div class="archive-cards-grid">
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">入門・やってみた</span>
+                    <h4>非エンジニア出身の僕がGitコンフリクトを克服するまでの3ステップ</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">Web・入門</span>
+                    <h4>初めて書いたHTML/CSSの個人サイトをGitHub Pagesで公開した手順</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">環境・ツール</span>
+                    <h4>Dockerが完全に理解できたので初心者向けに超やさしく解説する</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">趣味・ガジェット</span>
+                    <h4>キーボードの軸沼へようこそ〜自分に合ったキースイッチ選び〜</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">体験談・ガジェット</span>
+                    <h4>2026年買って本当にQOLが爆上がりしたデスク周辺グッズBest 3</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 3分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">失敗談・Tips</span>
+                    <h4>初学者が数時間溶かしたCSSレイアウト崩れの原因と解決策まとめ</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 中級者向け -->
+          <div class="archive-toggle-item" data-level="intermediate">
+            <button type="button" class="archive-toggle-header" aria-expanded="false">
+              <div class="archive-toggle-left">
+                <span class="level-badge intermediate">🚀 中級者向け</span>
+                <span class="archive-toggle-title">個人開発・実務Tips・新フレームワーク・チーム開発</span>
+                <span class="archive-count-badge">6件</span>
+              </div>
+              <span class="archive-chevron">▼</span>
+            </button>
+            <div class="archive-toggle-body">
+              <div class="archive-cards-grid">
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">Web・アプリ</span>
+                    <h4>Next.js App Router に移行してみてハマったポイント総まとめ</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">モバイル・個人開発</span>
+                    <h4>Flutterで1週間個人開発！位置情報連動アプリをリリースしてみた</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">ツール・環境</span>
+                    <h4>Neovimを自分好みに育てたら開発速度が2倍になった話</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">Web・バックエンド</span>
+                    <h4>Supabase ＋ Next.jsで認証付きCRUDアプリを爆速で作る実践レシピ</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">チーム開発・反省会</span>
+                    <h4>ハッカソンで設計が破綻して学んだ「動く最小限（MVP）」の作り方</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">AI・開発効率化</span>
+                    <h4>GitHub Copilot ＆ Cursor を使ったAI駆動開発のリアルな作業フロー</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 上級者向け -->
+          <div class="archive-toggle-item" data-level="advanced">
+            <button type="button" class="archive-toggle-header" aria-expanded="false">
+              <div class="archive-toggle-left">
+                <span class="level-badge advanced">⚡ 上級者向け</span>
+                <span class="archive-toggle-title">アーキテクチャ・最適化・インフラ・低レイヤ</span>
+                <span class="archive-count-badge">6件</span>
+              </div>
+              <span class="archive-chevron">▼</span>
+            </button>
+            <div class="archive-toggle-body">
+              <div class="archive-cards-grid">
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">言語・Rust</span>
+                    <h4>Rustで自作CLIツールを作ってcrates.ioに公開するまでの全記録</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">パフォーマンス・Web</span>
+                    <h4>Webフロントエンドのレンダリング最適化とCore Web Vitals改善ログ</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">インフラ・仮想化</span>
+                    <h4>自宅サーバー（Proxmox）を立ち上げてサークル用サービスをセルフホストした構成図</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">CI/CD・DevOps</span>
+                    <h4>GitHub Actionsでテスト・ビルド・自動デプロイを完全自動化するCI/CD設計</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">バックエンド・Go</span>
+                    <h4>Go言語の並行処理（Goroutine/Channel）でスクレイピングを爆速化した話</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+
+                <div class="archive-card">
+                  <div>
+                    <span class="archive-category">セキュリティ・ネットワーク</span>
+                    <h4>個人開発Webサービスのセキュリティ対策＆Cloudflare防御設定の勘所</h4>
+                  </div>
+                  <div class="archive-meta">
+                    <span class="archive-time-badge">⏱️ 5分LT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">よくある質問</h2>
+          <p class="section-subtitle">参加や登壇に関する疑問にお答えします。</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. スライドはPowerPointやKeynoteを使わないとダメですか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>まったく指定はありません！Googleスライド、Keynoteはもちろん、Notionのページをスクロールしながら話す形式や、Markdownファイル、ターミナル、GitHubのリポジトリ画面を映しながら話すスタイルでも大歓迎です。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 技術力がまだ低くて、発表できるようなネタがありません…</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>LT会で一番盛り上がるのは、実は「初心者が触ってみて感じた疑問」や「エラーで詰まった話」です！すごいプロダクトを発表する場ではなく、日々の気づきをシェアする場なので、安心して何でもお話しください。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 発表時間（5分）をオーバーしたらどうなりますか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>5分になるとベルが鳴り、温かい拍手とともに発表終了となります！延長できずに終わってしまっても「続きはアフタートークで！」と盛り上がれるのがLTの良さなので、怒られたりマイナスになることは一切ありません。</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 聴講（見学）だけの参加でも大丈夫ですか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>もちろん大歓迎です！「まずはどんな雰囲気か見てみたい」「他の人の発表を聞いて刺激を受けたい」という方もたくさんいます。チャットやリアクションで一緒に盛り上げてください！</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Q. 当日急用で行けなくなったり、スライドが間に合わなかったらどうすればいいですか？</span>
+              <span class="faq-chevron">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>学業や体調が最優先です。もし都合が悪くなった場合は、Slackで一言伝えていただければいつでもキャンセル可能です。スライドが未完成のまま画面共有で喋るだけでも歓迎されます！</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entry / CTA Banner Section -->
+    <section id="entry" class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>あなたの「ちょっとやってみた」を<br>シェアしてみませんか？</h2>
+          <p>
+            最初は誰でも初めてです。CirKitの仲間と一緒に、楽しくアウトプットの一歩を踏み出しましょう！
+          </p>
+
+          <div class="cta-buttons">
+            <a href="https://forms.gle/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <span>登壇エントリー（Googleフォーム）</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://slack.com/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>Slackで相談・見学参加</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h4>CirKit LT会</h4>
+          <p>金沢工業大学発のベンチャー企業・課外活動プロジェクト「CirKit」メンバーによるライトニングトークコミュニティ</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://cirkit.jp/" target="_blank" rel="noopener noreferrer" class="footer-link-highlight">🌐 CirKit 公式サイト ↗</a>
+          <a href="./newyear.html" class="footer-link-event">🎍 新春！大LT会 特設ページ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Takumi Sudo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
